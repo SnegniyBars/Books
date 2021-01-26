@@ -12,5 +12,6 @@ namespace Application.DAL
         void DeleteBook(int bookId);
         void UpdateBook(Book book);
         void Save();
+        bool BookExist(int id);
     }
 }

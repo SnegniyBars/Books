@@ -67,5 +67,10 @@ namespace Application.DAL
             Dispose(true);
             GC.SuppressFinalize(this);
         }
+
+        public bool BookExist(int id)
+        {
+            return context.Books.Any(e => e.BookId == id);
+        }
     }
 }
